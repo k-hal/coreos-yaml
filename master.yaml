@@ -70,6 +70,7 @@ coreos:
             -e MIRROR_TAGS_CACHE_TTL=1800 \
             quay.io/devops/docker-registry:latest
     - name: docker.service
+      command: start
       content: |
         [Unit]
         Description=Docker Application Container Engine
